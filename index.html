@@ -10,7 +10,7 @@
 </head>
 
 <!-- BODY background -->
-<body>
+<body class="grid-container">
 
 <!-- HEADER, titulo, navigation -->
 
@@ -28,7 +28,7 @@
     </nav>
 
     <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" id="" >
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" id="menu-button" >
         menu
         </button>
         <ul class="dropdown-menu">
@@ -78,7 +78,7 @@
 
 
 
-<!-- music seccion -->
+<!-- INTRO MIX & NOT VISIBLE IN MASTER -->
 <section class="media">
     <h4>introduction mix</h4>
     <article class="article-visible">
@@ -106,20 +106,61 @@
                     <div><audio controls><source src="./audio/PHILOUM HARD compressed.mp3"></audio></div>
 
         <h5>no id</h5>
-                    <div><img src="./css/ACID.png" alt=""></div>
+                    <div><img src="./css/cover1.jpg" alt=""></div>
                 <div class="p-container"><p>no id is just a diffrent mode of using the samples apply in a techno</p></div>
                     <div><audio controls><source src="./audio/NO ID- BenomadMusic.mp3"></audio></div>
 
         <h5>philoum</h5>
-                    <div><div><img src="./css/ACID.png" alt=""></div></div>
-                <div class="p-container"><p>test trap is another 
-                    perspective about 
-                    my home studio samples</p></div>
+                    <div><div><img src="./css/cover2.jpg" alt=""></div></div>
+                <div class="p-container"><p>another perspective about my home studio samples</p></div>
                     <div><audio controls ><source src="./audio/PHILOUM mp3 comp.mp3"></audio></div>
         </div>
     </li>
 </ol>
 </section>
+
+
+
+
+
+<div id="carouselExampleCaptions" class="carousel-slide">
+    <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="./css/ACID.png" class="d-block w-100" alt="acid">
+        <div class="carousel-caption d-none d-md-block">
+        <h5>Hardboot</h5>
+        <p>Hardboot is one vision of the samples apply to hard techno music.</p>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <img src="./css/cover1.jpg" class="d-block w-100" alt="cover1">
+        <div class="carousel-caption d-none d-md-block">
+        <h5>No Id</h5>
+        <p>No Id is just a diffrent mode of using the samples apply in a hardcore techno.</p>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <img src="./css/cover2.jpg" class="d-block w-100" alt="cover2">
+        <div class="carousel-caption d-none d-md-block">
+        <h5>Philoum</h5>
+        <p>Another perspective about my home studio samples.</p>
+        </div>
+    </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    </button>
+</div>
 
 
 <!-- SECTION BOTTON -->
@@ -147,9 +188,9 @@
 
         <div class="footernav">
             <ul>
-                <li><a href="./index.html">home</a></li>
-                <li><a href="./pages/aboutme.html">about me</a></li>
-                <li><a href="./pages/donwload.html">download</a></li>
+                <li><a class="only-button" href="./index.html">home</a></li>
+                <li><a class="only-button" href="./pages/aboutme.html">about me</a></li>
+                <li><a class="only-button" href="./pages/donwload.html">download</a></li>
                 <li><a href="./pages/arte.html">arte</a></li>
             </ul>
         </div>

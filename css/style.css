@@ -516,6 +516,7 @@ ol li audio{
 
 }
 
+.carousel-slide{ display: none;}
 
 
 /* CONTACTO */
@@ -789,8 +790,48 @@ a{
 
 }
 
-
 .mainarte{
+
+.im-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80rem; width: 50rem;
+
+img{
+    margin: 4%;
+    box-shadow: 0 0 2rem #000000,inset 0 0 2rem #000000; 
+    width: 80rem;
+    height: 80rem;}}
+
+.article-container{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4%;
+    background-color: #000000;
+    width: 70%;
+
+article{ margin: 4%;
+
+p{ 
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #F2F2F2; 
+
+
+
+}
+
+
+}}
+}
+
+
+.mainanalog{
 
 .im-container{
         display: flex;
@@ -808,7 +849,17 @@ img{
         height: 41rem;}}
 }
 
-/* OTHERS ANALOG */
+
+
+
+
+
+
+
+
+
+
+/* GRID ANALOG PAGE */
 
 
 .grid-article-container{
@@ -930,26 +981,6 @@ p:hover{
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* GRIDS */
 
 .grid-container{ 
@@ -981,8 +1012,21 @@ p:hover{
 /* MOBILE SIZE */
 
 
+header{ grid-area: header-home;}
 
+main{ grid-area: main-home;}
 
+.media{ grid-area: section-home;}
+
+aside{ grid-area: aside-home;}
+
+.carousel-slide{ grid-area: music ;}
+
+.carousel-control-prev{ grid-area: music ;}
+
+.carousel-control-next{ grid-area: music ;}
+
+footer{ grid-area: footer;}
 
 
 
@@ -992,22 +1036,23 @@ p:hover{
 @media screen and (min-width: 320px) and (max-width: 767px){
 .grid-container{
     grid-template-columns: 1fr;
-    grid-template-rows: 1rem 4rem 2rem 5rem 2rem;
+    grid-template-rows: 10rem 20rem 17rem 20rem 20rem 30rem;
     grid-template-areas:
-    "header"
-    "main"
-    "section"
-    "audiovisual"
+    "header-home"
+    "main-home"
+    "music"
+    "section-home"
+    "aside-home"
     "footer";
 }
 
-main{ display: none;}
-
+body{ overflow-x:hidden ;}
 header{ 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 20rem;
     height: 6rem;
 
 h1{ 
@@ -1023,17 +1068,115 @@ h1{
 nav{ display: none;}
 }
 
-aside{display: none;}
-
-.dropdown{ 
+main{ 
     display: flex;
-    flex-direction:column;
-    justify-content: start;
-    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+
+.arte-visible{ display: none;}
+
+.logotype{ 
+    width: 15rem; 
+    height: 15rem;}
+
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover ;
+    background-attachment: fixed;
+    padding: 3%;
+    width: 20rem; height: 5;
+    
+
+    img{
+        box-shadow:0 0 3rem #000000 ; 
+        width: 17rem; height: 20rem;
+        margin: 2%;}
+
+    article{ 
+        border: 0.1rem solid #000000 ;
+        box-shadow: 0 0 2rem #ffffff;
+        background-color: #000000;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items:center;
+
+
+        p{
+            margin:5%;
+            font-size: 1rem;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            color: #F2F2F2;
+            background-color: #000000;
+            background-size: contain;}
+
+
+    }
 
 
 
-#menu-button{ color: #F2F2F2;}
+
+nav{ display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 0.2rem solid #572E8B;
+    width: 6rem; height:3rem ;
+    background-color:transparent ;
+    text-align: center;
+    margin: 2%;
+
+
+a{ text-decoration: none;}
+
+
+    p{
+    background-color: transparent;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style:normal;
+    font-size: 0.8rem;
+    color: #F2F2F2;
+    text-transform: uppercase;
+    margin: 2%;}
+
+    p:hover{
+
+        background-color: #572E8B;
+        transition: 0.5s;}
+    
+
+
+}
+
+
+
+}
+
+.dropdown{
+    width: 40rem;
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+#menu-button{
+    padding-right: 5%;
+    text-transform: uppercase;
+    background-color: #191717;
+    color: #F2F2F2;}
 
 
 
@@ -1041,15 +1184,115 @@ aside{display: none;}
 }
 
 .organized-list{
+    display: none;
+
+
+
+
+}
+
+
+.carousel-slide{
     display: flex;
     flex-direction: column;
-    justify-content: ce;
+    justify-content: center;
+    align-items: center;
+    width:15rem;height: 15rem;
+
+
+
+
+}
+
+.media{
+
+    h4{ display: none;}
+
+
+.article-visible{
+    background-color: #02733E;
+}
+
+
+}
+
+}
+
+footer{
+        margin-top: 70%;
+        background-color: #000000;
+        width: 20rem; height: 40rem;
+
+
+.iconos{ display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50%;
+        width: 20rem; height: 4rem;}
+
+
+.iconos a{ 
+        background-color: transparent;
+        width: 2rem; height: 2rem;}
+
+
+svg{ 
+        color: #f2f2f2;
+        opacity: 50%;}
+
+
+.footernav ul{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30%;
+    height: 8rem;
+
+
+
+
+.only-button{ 
+    display: flex;
+    flex-direction: column;
+
+    font-size: 0.8rem;
+    
+
+    justify-content: space-between;
+    margin: 10%;
+
+}
+
+a{display: none;}
 
 }
 
 
 
 
+
+
+
+
+.footerbotom{ 
+            background-color: #000000;
+            padding: 2rem;
+            text-align: center;
+        
+        p{ color: #F2F2F2;}
+    }
+
+
+.designes{ 
+            text-transform: uppercase;
+            opacity: 0.7;
+            margin: 0rem 0.5rem;
+            letter-spacing: 0.1rem;
+        
+        
+        }
 
 
 
@@ -1075,9 +1318,9 @@ aside{display: none;}
 
 
 /* desktop */
-@media screen and (min-width: 1024px){
+/* @media screen and (min-width: 1024px){ */
 
-.grid-container{        
+/* .grid-container{        
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 10rem 45rem 20rem 75rem 20rem;
     grid-template-areas:
@@ -1089,4 +1332,4 @@ aside{display: none;}
 
 
 
-}
+} */
