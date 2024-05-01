@@ -51,6 +51,8 @@ body{
     overflow-x: hidden;
 }
 
+
+
 /* HEADER */
 
 header{
@@ -120,7 +122,14 @@ a:hover{
 
 }
 
+
+
+/* BOTON MENU MOBILE */
+
 .dropdown{ display: none;}
+
+
+
 
 /* MAIN */
 
@@ -130,6 +139,7 @@ main{
     justify-content: space-around;
     align-items: center;
     margin-top: 7% ;
+
 h2{
     letter-spacing: 0.5rem;
     text-shadow:0 0 2rem #000000;
@@ -141,7 +151,6 @@ h2{
     font-weight: 400;
     font-style: normal;}
 
-
 nav{ 
     display: flex;
     flex-direction: column;
@@ -151,52 +160,6 @@ nav{
     a{ text-decoration: none;}
 }
 
-
-
-/* main about me page */
-
-.header-aboutme{ height: 4rem;
-
-
-nav ul li{ margin-top: 1rem;}
-}
-
-
-.seccondmain{ 
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center ;
-    
-
-    article{
-        border-radius: 5%; 
-        box-shadow:0 0 2rem #000000, inset 0 0 3rem #000000;
-        background-image:linear-gradient(
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.9)),url(./prlx.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        width: 70rem; height: 40rem; }
-
-
-p{  
-    
-    margin: 5%;
-    font-size: 1.45rem;
-    color: #aeacac;
-    text-transform: uppercase;}
-
-    .fotoc{
-        box-shadow:0 0 2rem #000000, inset 0 0 3rem #000000;
-        border-radius: 20%;
-        margin: 7%;
-        width: 25rem; height: 30rem;
-    }
-
-}
 
 
 /* ASIDE  */
@@ -280,6 +243,55 @@ a{ text-decoration: none;}
 
 
 }
+
+
+/* main about me page */
+
+.header-aboutme{ height: 4rem;
+
+
+nav ul li{ margin-top: 1rem;}
+}
+
+
+.seccondmain{ 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    
+
+    article{
+        border-radius: 5%; 
+        box-shadow:0 0 2rem #000000, inset 0 0 3rem #000000;
+        background-image:linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.9)),url(./prlx.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 70rem; height: 40rem; }
+
+
+p{  
+    
+    margin: 5%;
+    font-size: 1.45rem;
+    color: #aeacac;
+    text-transform: uppercase;}
+
+    .fotoc{
+        box-shadow:0 0 2rem #000000, inset 0 0 3rem #000000;
+        border-radius: 20%;
+        margin: 7%;
+        width: 25rem; height: 30rem;
+    }
+
+}
+
+
+
 
 .organized-list{ 
     margin-bottom: 10%;
@@ -421,79 +433,87 @@ footer{
     margin-bottom: 2rem; 
     background-color: #000000;
 
+
+
+
+    .iconos{ display: flex;
+        justify-content: center;}
+        
+        .iconos a{ 
+            font-size: 1rem;
+            text-decoration: none;
+            padding: 1rem;
+            background-color: whitesmoke;
+            margin: 1rem;
+            border-radius: 1.5rem;
+            }
+        
+        
+        
+        .iconos a:hover{ 
+            background-color: #572E8B;
+            transition: 0.2s;
+        }
+        
+        .iconos a:hover svg{ 
+        color: #F2F2F2;
+        transition: o,1s;
+        }
+        
+        .footernav{ margin: 3rem 0;}
+        
+        .footernav ul{ 
+            display: flex;
+            justify-content: center;
+            
+        }
+        
+        .footernav ul li a{ 
+            color: #BFBFBF;
+            margin: 2rem;
+            text-decoration: none;
+            font-size: 1.3rem;
+            opacity: o.8;
+        
+        }
+        
+        .footernav ul li a:hover{ 
+            opacity: 1 ;
+            color: #572E8B;
+        
+        
+        
+        
+        }
+        
+        .footerbotom{ 
+            background-color: #000000;
+            padding: 2rem;
+            text-align: center;
+        
+        p{ color: #F2F2F2;}
+            
+        
+        }
+        
+        .designes{ 
+            text-transform: uppercase;
+            opacity: 0.7;
+            margin: 0rem 0.5rem;
+            letter-spacing: 0.1rem;
+        
+        
+        }
+
+
+
+        svg{ color: #000000;
+            opacity: 80%;}
+
 }
 
-.iconos{ display: flex;
-justify-content: center;}
-
-.iconos a{ 
-    font-size: 1rem;
-    text-decoration: none;
-    padding: 1rem;
-    background-color: whitesmoke;
-    margin: 1rem;
-    border-radius: 1.5rem;
-    }
 
 
-
-.iconos a:hover{ 
-    background-color: #572E8B;
-    transition: 0.2s;
-}
-
-.iconos a:hover svg{ 
-color: #F2F2F2;
-transition: o,1s;
-}
-
-.footernav{ margin: 3rem 0;}
-
-.footernav ul{ 
-    display: flex;
-    justify-content: center;
-    
-}
-
-.footernav ul li a{ 
-    color: #BFBFBF;
-    margin: 2rem;
-    text-decoration: none;
-    font-size: 1.3rem;
-    opacity: o.8;
-
-}
-
-.footernav ul li a:hover{ 
-    opacity: 1 ;
-    color: #572E8B;
-
-
-
-
-}
-
-.footerbotom{ 
-    background-color: #000000;
-    padding: 2rem;
-    text-align: center;
-
-p{ color: #F2F2F2;}
-    
-
-}
-
-.designes{ 
-    text-transform: uppercase;
-    opacity: 0.7;
-    margin: 0rem 0.5rem;
-    letter-spacing: 0.1rem;
-
-
-}
-
-svg{ color: #000000;
-opacity: 80%;}
 
 
 /* CONTACTO */
