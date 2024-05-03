@@ -8,14 +8,11 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>homepage</title>
 </head>
-
-
-
 <body class="grid-container">
-
 <header class="grid-header">
-    <h1>benomad artemusik</h1>
-    <!-- <button>open</button> -->
+    <h1>Benomad ArteMusik</h1>
+    
+        
     <nav>
         <ul>
             <li><a href="./pages/aboutme.html">about me</a></li>
@@ -25,7 +22,6 @@
             <li class="arte-visible"><a href="./pages/arte.html">arte</a></li>
         </ul>
     </nav>
-
     <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" id="menu-button" >
         menu
@@ -38,64 +34,95 @@
         <li><a class="dropdown-item" href="./pages/arte.html">Arte</a></li>
         </ul>
     </div>
-
-
 </header>
 
+<div class="media-first">
+    <section class="grid-section-zero">
+            <h4>welcome</h4>
+        <article class="article-visible">
+            <p>its great for me to have you here
+            </p>
+        </article>
+    </section>
+</div>
 
-<!-- MAIN logotipo/ background & analog/arte -->
-<main>
+<main class="grid-main">
     <nav>
         <a class="arte-visible" href="./pages/analog.html"><h2>analog</h2></a>
-
         <a href="./index.html"><img class="logotype" src="./assets/logotype canvas /prototipo4.svg" alt="logotype"></a>
-
         <a class="arte-visible" href="./pages/arte.html"><h2>arte</h2></a>
     </nav>
 </main>
-
-<!-- <  ASIDE text, img, botton > -->
-
-<aside>
-            <img src="./assets/background & jpg/CAT PIC.jpg" width="100px" alt="me">
-    <article>
-            <p> 
-                Hello my name is Antonio, I'm 26 years old,
-                I live in Austria and I'm a music producer
-                since 6 years. In 2017 was my first encounter
-                with electronic music, which at the time 
-                caused me a lot of curiosity in what
-                was happening...
-            </p>
-    </article>
-                <nav>
-                    <a href="./pages/aboutme.html">
-                        <p>about me</p>
-                    </a>
-                </nav>
-</aside>
-
-
-
-<!-- INTRO MIX & NOT VISIBLE IN MASTER -->
-<section class="media">
-    <h4>introduction mix</h4>
-    <article class="article-visible">
-        <p>its great for me to have you here, 
-        now you can download for free your 
-        sample pack professional, with all 
-        the best from my studio
+<aside class="grid-aside">
+    <img src="./assets/background & jpg/CAT PIC.jpg" width="100px" alt="me">
+<article>
+        <p> 
+            Hello my name is Antonio, I'm 26 years old,
+            I live in Austria and I'm a music producer
+            since 6 years. In 2017 was my first encounter
+            with electronic music, which at the time 
+            caused me a lot of curiosity in what
+            was happening...
         </p>
-    </article>
-</section>
+</article>
+    <nav>
+        <a href="./pages/aboutme.html">
+                <p>about me</p>
+        </a>
+    </nav>
+</aside>
+<div class="media">
+    <section class="grid-section-zero">
+            <h4>introduction mix</h4>
+        <article class="article-visible">
+            <p>its great for me to have you here, 
+            now you can download for free your 
+            sample pack professional, with all 
+            the best from my studio
+            </p>
+        </article>
+    </section>
+</div>
 
 
-
-<!-- podria usar grid aqui -->
-
+<div class="carousel-container">
+    <h3>playing the sample game</h3>
+<div class="carousel-slide">
+    <div class="elementos">
+            <img src="./css/ACID.png">
+            <div><audio controls><source src="./audio/PHILOUM HARD compressed.mp3"></audio></div>
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Hardboot</h5>
+                <p>
+                    Hardboot is one vision of the samples apply to hard techno music.
+                </p>
+                
+        </div>
+    </div>
+    <div class="elementos">
+            <img src="./css/cover1.jpg">
+            <div><audio controls><source src="./audio/NO ID- BenomadMusic.mp3"></audio></div>
+        <div class="carousel-caption d-none d-md-block">
+            <h5>No Id</h5>
+                <p>
+                    No Id is just a diffrent mode of using the samples apply in a hardcore techno.
+                </p>
+        </div>
+    </div>
+    <div class="elementos">
+            <img src="./css/cover2.jpg">
+            <div><audio controls ><source src="./audio/PHILOUM mp3 comp.mp3"></audio></div>
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Philoum</h5>
+                <p>
+                    Another perspective about my home studio samples.
+                </p>
+        </div>
+    </div>
+</div>
+</div>
 
 <section class="organized-list">
-
 <ol>
     <li>
         <div class="section-container">
@@ -103,12 +130,10 @@
                     <div><img src="./css/ACID.png" alt=""></div>
                 <div class="p-container"><p>hardboot is one vision of the samples apply to hard techno music</p></div>
                     <div><audio controls><source src="./audio/PHILOUM HARD compressed.mp3"></audio></div>
-
         <h5>no id</h5>
                     <div><img src="./css/cover1.jpg" alt=""></div>
                 <div class="p-container"><p>no id is just a diffrent mode of using the samples apply in a techno</p></div>
                     <div><audio controls><source src="./audio/NO ID- BenomadMusic.mp3"></audio></div>
-
         <h5>philoum</h5>
                     <div><div><img src="./css/cover2.jpg" alt=""></div></div>
                 <div class="p-container"><p>another perspective about my home studio samples</p></div>
@@ -118,56 +143,15 @@
 </ol>
 </section>
 
-
-
-
-
-<div id="carouselExampleCaptions" class="carousel-slide">
-    <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-    <div class="carousel-item active">
-        <img src="./css/ACID.png" class="d-block w-100" alt="acid">
-        <div class="carousel-caption d-none d-md-block">
-        <h5>Hardboot</h5>
-        <p>Hardboot is one vision of the samples apply to hard techno music.</p>
-        </div>
-    </div>
-    <div class="carousel-item">
-        <img src="./css/cover1.jpg" class="d-block w-100" alt="cover1">
-        <div class="carousel-caption d-none d-md-block">
-        <h5>No Id</h5>
-        <p>No Id is just a diffrent mode of using the samples apply in a hardcore techno.</p>
-        </div>
-    </div>
-    <div class="carousel-item">
-        <img src="./css/cover2.jpg" class="d-block w-100" alt="cover2">
-        <div class="carousel-caption d-none d-md-block">
-        <h5>Philoum</h5>
-        <p>Another perspective about my home studio samples.</p>
-        </div>
-    </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-    </button>
-</div>
-
-
-<!-- SECTION BOTTON -->
-
-
-
-
 <footer>
+    <div class="footer-nav">
+        <ul>
+            <li><a class="only-button" href="./index.html">home</a></li>
+            <li><a class="only-button" href="./pages/aboutme.html">about me</a></li>
+            <li><a class="only-button" href="./pages/donwload.html">download</a></li>
+            <li><a href="./pages/arte.html">arte</a></li>
+        </ul>
+    </div>
         <div class="iconos">
                 <a href="https://www.instagram.com/be_nomad_music?igsh=eXN1ZHNwYnY2MjIw&utm_source=qr"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
                         <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg></i>
@@ -184,7 +168,6 @@
                         </svg>
                 </a>
         </div>
-
         <div class="footernav">
             <ul>
                 <li><a class="only-button" href="./index.html">home</a></li>
@@ -193,7 +176,6 @@
                 <li><a href="./pages/arte.html">arte</a></li>
             </ul>
         </div>
-
         <div class="footerbotom">
             <p>Copyrigth &copy;2024; Designed by <span class="designes">Antonio</span></p>
         </div>
