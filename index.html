@@ -10,9 +10,7 @@
 </head>
 <body class="grid-container">
 <header class="grid-header">
-    <h1>Benomad ArteMusik</h1>
-    
-        
+    <h1>Benomad Artemusik</h1>
     <nav>
         <ul>
             <li><a href="./pages/aboutme.html">about me</a></li>
@@ -23,11 +21,13 @@
         </ul>
     </nav>
     <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" id="menu-button" >
-        menu
+        <button class="svg-button" type="button" data-bs-toggle="dropdown" id="menu-button" >
+            <svg class="svg-element" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
         </button>
         <ul class="dropdown-menu">
-        <li><a class="dropdown-item active" href="./pages/aboutme.html">About me</a></li>
+        <li><a class="dropdown-item" href="./pages/aboutme.html">About me</a></li>
         <li><a class="dropdown-item" href="./pages/donwload.html">Download</a></li>
         <li><a class="dropdown-item" href="./pages/contact.html">Contact</a></li>
         <li><a class="dropdown-item" href="./pages/analog.html">Analog</li>
@@ -38,7 +38,8 @@
 
 <div class="media-first">
     <section class="grid-section-zero">
-            <h4>welcome</h4>
+            <h4 class="subtitel-not-visible">welcome</h4>
+            <div><img class="logotype" src="./assets/logotype canvas /prototipo4.svg" alt="logotype"></div>
         <article class="article-visible">
             <p>its great for me to have you here
             </p>
@@ -46,47 +47,20 @@
     </section>
 </div>
 
+
+<div class="html-main">
 <main class="grid-main">
     <nav>
         <a class="arte-visible" href="./pages/analog.html"><h2>analog</h2></a>
-        <a href="./index.html"><img class="logotype" src="./assets/logotype canvas /prototipo4.svg" alt="logotype"></a>
+        <a  href="./index.html"><img class="logotype" src="./assets/logotype canvas /prototipo4.svg" alt="logotype"></a>
         <a class="arte-visible" href="./pages/arte.html"><h2>arte</h2></a>
     </nav>
 </main>
-<aside class="grid-aside">
-    <img src="./assets/background & jpg/CAT PIC.jpg" width="100px" alt="me">
-<article>
-        <p> 
-            Hello my name is Antonio, I'm 26 years old,
-            I live in Austria and I'm a music producer
-            since 6 years. In 2017 was my first encounter
-            with electronic music, which at the time 
-            caused me a lot of curiosity in what
-            was happening...
-        </p>
-</article>
-    <nav>
-        <a href="./pages/aboutme.html">
-                <p>about me</p>
-        </a>
-    </nav>
-</aside>
-<div class="media">
-    <section class="grid-section-zero">
-            <h4>introduction mix</h4>
-        <article class="article-visible">
-            <p>its great for me to have you here, 
-            now you can download for free your 
-            sample pack professional, with all 
-            the best from my studio
-            </p>
-        </article>
-    </section>
 </div>
 
 
 <div class="carousel-container">
-    <h3>playing the sample game</h3>
+    <h3 class="subtitel-not-visible">playing the sample game</h3>
 <div class="carousel-slide">
     <div class="elementos">
             <img src="./css/ACID.png">
@@ -122,6 +96,41 @@
 </div>
 </div>
 
+<aside class="grid-aside">
+    <img src="./assets/background & jpg/CAT PIC.jpg" width="100px" alt="me">
+<article>
+        <p> 
+            Hello my name is Antonio, I'm 26 years old,
+            I live in Austria and I'm a music producer
+            since 6 years. In 2017 was my first encounter
+            with electronic music, which at the time 
+            caused me a lot of curiosity in what
+            was happening...
+        </p>
+</article>
+    <nav>
+        <a href="./pages/aboutme.html">
+                <p>about me</p>
+        </a>
+    </nav>
+</aside>
+
+<div class="media">
+    <section class="grid-section-zero">
+            <h4>introduction mix</h4>
+        <article class="article-visible">
+            <p>its great for me to have you here, 
+            now you can download for free your 
+            sample pack professional, with all 
+            the best from my studio
+            </p>
+        </article>
+    </section>
+</div>
+
+
+
+
 <section class="organized-list">
 <ol>
     <li>
@@ -143,7 +152,7 @@
 </ol>
 </section>
 
-<footer>
+<footer class="grid-footer">
     <div class="footer-nav">
         <ul>
             <li><a class="only-button" href="./index.html">home</a></li>
