@@ -133,7 +133,6 @@ a{
 }
 
 .media-first{
-
         margin-top: 60%;
         margin-left: 1%;
         margin-right: 1%;
@@ -192,7 +191,6 @@ aside{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 20rem; 
 
 
 
@@ -265,9 +263,6 @@ p:hover{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width:20rem ;
-        background-color: transparent;
-
 h3{ 
         text-align: center;
         text-transform: uppercase;
@@ -285,8 +280,7 @@ h3{
         flex-wrap: nowrap;
         overflow-x: scroll;
         overflow-y: hidden;
-        width: 18rem;
-        height: 25rem;
+        width: 20rem;
         background-color:#000000;
 
 
@@ -295,7 +289,7 @@ h3{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* flex: 1 0 auto; */
+        flex: 1 0 auto;
         margin: 0.5rem;
 
 
