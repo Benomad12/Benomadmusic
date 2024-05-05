@@ -280,24 +280,30 @@ h3{
 
 .carousel-slide{
         display: flex;
+        flex-direction: row;
         align-items: center;
-        /* flex-wrap: nowrap; */
+        flex-wrap: nowrap;
         overflow-x: scroll;
         overflow-y: hidden;
         width: 18rem;
-        height: 18rem;
+        height: 25rem;
         background-color:#000000;
 
 
 .elementos{
-        flex: 1 0 auto;
-        margin: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* flex: 1 0 auto; */
+        margin: 0.5rem;
+
 
 img{ 
-        width: 10rem;}
+        width: 13rem;}
 
 audio{ 
-        
+
         margin-top: 15%;
         width: 10rem;
         height: 1rem;
