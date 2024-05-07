@@ -57,7 +57,9 @@ body{
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        overflow-x: hidden;}
+        overflow-x: hidden;
+        /* border: 1px solid red; */
+}
 
 
 header{
@@ -129,10 +131,9 @@ a{
 }
 
 .media-first{
-        margin-top: 50%;
+        margin-top: 60%;
         margin-left: 1%;
         margin-right: 1%;
-        height: 29.1rem;
 
 
 
@@ -140,7 +141,8 @@ a{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;}
+        align-items: center;
+}
 
 
 h4{    
@@ -310,7 +312,6 @@ footer{
         align-items: center;
         margin-bottom: 2rem; 
         background-color: #000000;
-        height: 18rem;
 
 .iconos{ 
         display: flex;
@@ -339,11 +340,11 @@ svg{
         height: 1.2rem;
         color: #f2f2f2;
         opacity: 80%;
-        margin-top: 6rem;
+        margin-top: 2rem;
 }
 
-.footer-nav{ 
-        margin-top: 40%;
+.footer-nav ul li{ 
+        margin-top: 1rem;
 
 }
 
@@ -353,6 +354,7 @@ svg{
         justify-content: space-between;
         align-items: center;
         margin-right: 2rem;
+        padding-top: 5rem;
 }
 
 .footer-nav ul li a{ 
@@ -360,6 +362,7 @@ svg{
         text-transform: uppercase;
         color: #BFBFBF;
         font-size: 0.6rem;
+        margin-top: 30%;
         opacity: o.8;
 
 }
@@ -396,14 +399,16 @@ p{
 
 /* ABOUTME PAGE */
 
+
+
 .audio-cont{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         background-color: #0e041a;
-        height: 10rem;
-        margin-top: ;
+        height: 9rem;
+        margin-top: 62rem;
 
 audio{ 
         width: 10rem;
@@ -423,7 +428,8 @@ h2{
         flex-direction: column;
         justify-content: center;
         align-items: center ;
-        margin-top: 50rem;
+        margin-top: 34rem;
+        margin-bottom: 50%;
 
 article{
         display: flex;
@@ -455,8 +461,7 @@ p{
 .introaside{ 
         display: flex;   
         flex-direction: column;
-        margin-top: 90%;
-        padding-top: 20rem;
+        padding-top: 40rem;
 
 .master-class{ 
         font-size: 1.5rem; }
@@ -737,7 +742,11 @@ p{
 }
 }
 }
-/* GRID ANALOG PAGE */
+
+
+
+
+/* GRID  */
 .grid-container{ 
         display: grid;
         row-gap:1rem;
@@ -745,15 +754,14 @@ p{
         width: 100%;
         height: 100vh;       
         grid-template-columns: 1fr  ;
-        grid-template-rows: 40rem 100rem 10rem 20rem 30rem 10em;
+        grid-template-rows: 40rem 10rem 30rem 40rem 20em;
         grid-template-areas:
         "header"
-        "main"
         "section"
         "carousel"
-        "main"
-        "aboutme"
+        "aside"
         "foot";
+}
 
 /* GRID AREAS */
 
@@ -761,16 +769,24 @@ p{
 
 .mediafirst{ grid-area: section;}
 
-.grid-main{ grid-area: main;}
-
 .carousel-container{ grid-area: carousel;}
 
-/* .grid-section{ grid-area: section;} */
-
-.grid-aside{ grid-area: aboutme ;}
-
+.grid-aside{ grid-area: aside ;}
 
 .grid-footer{grid-area: foot;}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ADAPTACIONES */
 
@@ -900,7 +916,7 @@ p{
 }
 
 }
-}
+
 
 
 
@@ -1162,6 +1178,8 @@ svg{
 
     nav ul li{ margin-top: 1rem;}
 }
+
+.container-text-center{ display: none;}
 
 .audio-cont{display: none;}
 
@@ -1480,7 +1498,7 @@ a{ text-decoration: none;}
         justify-content: center;
         align-items: center;
 
-    h3{ 
+h3{ 
         color: aliceblue;
         padding-left: 7%;
         letter-spacing: 2rem;
