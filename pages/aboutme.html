@@ -16,30 +16,33 @@
 <!-- HEADER, h1, botton home, navigation, my picture -->
 
 <header class="grid-header">
-        <h1>the beginning of benomad</h1>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">home</a></li>
-                    <li><a href="./donwload.html">download</a></li>
-                    <li><a href="./contact.html">contact</a></li>
-                </ul>
-        </nav>
-        <div class="dropdown">
-            <button class="svg-button" type="button" data-bs-toggle="dropdown" id="menu-button" >
-                <svg class="svg-element" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                </svg>
-            </button>
-            <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="../pages/donwload.html">Download</a></li>
-            <li><a class="dropdown-item" href="../pages/contact.html">Contact</a></li>
-            <li><a class="dropdown-item" href="../pages/analog.html">Analog</li>
-            <li><a class="dropdown-item" href="../pages/arte.html">Arte</a></li>
-            </ul>
-        </div>
+    <h1>the beginning of benomad</h1>
+    <nav>
+        <ul>
+            <li><a href="../pages/donwload.html">download</a></li>
+            <li><a href="../pages/contact.html">contact</a></li>
+            <li class="analog-visible"><a href="../pages/analog.html">analog</a></li>
+            <li class="arte-visible"><a href="../pages/arte.html">arte</a></li>
+        </ul>
+    </nav>
+    <div class="dropdown">
+        <button class="svg-button" type="button" data-bs-toggle="dropdown" id="menu-button" >
+            <svg class="svg-element" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        </button>
+        <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="../index.html">home</a></li>
+        <li><a class="dropdown-item" href="../pages/donwload.html">Download</a></li>
+        <li><a class="dropdown-item" href="../pages/contact.html">Contact</a></li>
+        <li><a class="dropdown-item" href="../pages/analog.html">Analog</li>
+        <li><a class="dropdown-item" href="../pages/arte.html">Arte</a></li>
+        </ul>
+    </div>
 </header>
 <!-- MAIN: image from me, text, -->
 <div class="seccondmain">
+    <h2 class="begginer">Every expert was once a beginner</h2>
 <main class="grid-main">
     <div><img class="fotoc" src="../assets/background & jpg/CAT PIC.jpg"  alt=""></div>
     <article>
@@ -68,9 +71,8 @@
     </article>
 </main>
 </div>
-<!-- ASIDE:text, botoon -->
 <aside class="introaside">
-    <h2 class="master-class">master class</h2>
+    <div class="master-class"><h2 class="master" >master class</h2></div>
     <div class="image"><img src="../css/studio.jpg" alt="studio"></div>
     <h2>are you ready?</h2>
     <article>
@@ -81,26 +83,23 @@
             you need to take your music to the next level.
         </p>
     </article>
-
                 <nav>
                     <a href="../pages/donwload.html">
                         <p class="btn">click here</p>
                     </a>
                 </nav>
 </aside>
-
 <div class="audio-cont">
     <h2>message fom the universe to you</h2>
     <audio controls src="../audio/for the background.mp3"></audio>
 </div>
-
-
 <footer class="grid-footer">
     <nav class="footer-nav">
         <ul>
             <li><a class="only-button" href="../index.html">home</a></li>
             <li><a class="only-button" href="../pages/donwload.html">download</a></li>
-            <li><a href="./pages/arte.html">arte</a></li>
+            <li><a class="only-button" href="../pages/analog.html">analog</a></li>
+            <li><a class="only-button" href="../pages/arte.html">arte</a></li>
         </ul>
     </nav>
     <div class="iconos">
@@ -123,9 +122,9 @@
     <div class="footernav">
         <ul>
             <li><a href="../index.html">home</a></li>
-            <li><a href="../pages/aboutme.html">about me</a></li>
-            <li><a href="../pages/donwload.html">download</a></li>
             <li><a href="../pages/arte.html">arte</a></li>
+            <li><a href="../pages/analog.html">Analog</li>
+            <li><a href="../pages/donwload.html">download</a></li>
         </ul>
     </div>
 
