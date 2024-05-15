@@ -741,9 +741,9 @@ h3{
         align-items: center;
         height: 4rem;
 
-    nav ul li{ margin-top: 1rem; }
+        nav ul li{ margin-top: 1rem; }
 
-    a{ 
+        a{ 
         margin-top: 3%;
         align-items: center;}
 }
@@ -942,10 +942,8 @@ p{
 }
 
 
+/*tablet */
 
-
-
-/* tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px){ 
 
 }
@@ -974,7 +972,8 @@ body{
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        overflow-x: hidden;}
+        overflow-x: hidden;
+}
 
 header{
         display: flex;
@@ -1027,11 +1026,9 @@ a:hover{
 }
 }
 
-/* (li) NOT VISIBLE  */
 .analog-visible{ display: none;}
 
 .arte-visible{ display: none;}
-
 
 }
 
@@ -1055,15 +1052,18 @@ h2{
         color:#F2F2F2 ;
         font-family: "Poppins", sans-serif;
         font-weight: 400;
-        font-style: normal;}
+        font-style: normal;
+}
 
 nav{ 
         display: flex;
         flex-direction: column;
         justify-content:center;
-        align-items: center;}
+        align-items: center;
+}
 
-a{ text-decoration: none;}
+a{ text-decoration: none;
+}
 
 }
 
@@ -1128,13 +1128,16 @@ p{
         background-color:#000000 ;
         color: #F2F2F2;
         text-transform: uppercase;
-        margin: 2%;}
+        margin: 2%;
+}
 
 p:hover{
         background-color: #572E8B;
-        transition: 0.5s;}
+        transition: 0.5s;
+}
 
-a{ text-decoration: none;}
+a{ text-decoration: none;
+}
 
 }
 }
@@ -1263,7 +1266,8 @@ footer{
 
 }
 
-.footernav{ margin: 3rem 0;}
+.footernav{ margin: 3rem 0;
+}
 
 .footernav ul{ 
         display: flex;
@@ -1293,7 +1297,8 @@ footer{
 p{ 
         text-decoration: none;
         font-size: 1.5rem;
-        color: #F2F2F2;}
+        color: #F2F2F2;
+}
 
 }
 
@@ -1336,7 +1341,8 @@ article{
                 margin: 5%;
                 font-size: 2rem;
                 color: #aeacac;
-                text-transform: uppercase;}
+                text-transform: uppercase;
+        }
 
 }
 
@@ -1344,7 +1350,8 @@ article{
         box-shadow:0 0 2rem #000000, inset 0 0 3rem #000000;
         border-radius: 20%;
         margin: 7%;
-        width: 30rem; }
+        width: 30rem; 
+}
 
 }
 
@@ -1357,7 +1364,8 @@ article{
 
         h2{     
                 font-weight: 900;
-                text-align: center;}
+                text-align: center;
+        }
 }
 
 .image{ 
@@ -1366,7 +1374,8 @@ article{
         align-items: center;
 
         img{
-                width:40rem;}
+                width:40rem;
+        }
 }
 
 h2{
@@ -1398,11 +1407,13 @@ nav{
         .btn{
                 color: #ffffff;
                 transition: 0.5s; 
-                font-size: 1.5rem;}
+                font-size: 1.5rem;
+        }
 
         .btn:hover{ 
                 background-color: #572E8B;
-                transition: 0.5s;}
+                transition: 0.5s;
+        }
 }
 
 }
@@ -1431,7 +1442,8 @@ nav{
                 border: 0.1rem solid white;
                 background-color: #838080;
                 opacity: 80%;
-                box-shadow: 0 0 1rem #000000, inset 0 0 2rem #000000 ;}
+                box-shadow: 0 0 1rem #000000, inset 0 0 2rem #000000 ;
+        }
 
                 label{ 
                         font-size: 2rem;
@@ -1439,7 +1451,8 @@ nav{
                         margin: 5%;
                         background-color: #000000;
                         color: #F2F2F2;
-                        width: 15rem;}
+                        width: 15rem;
+                }
 
                 input::placeholder{
                         position: absolute;
@@ -1465,7 +1478,8 @@ nav{
                                                 padding: 0 0.2rem;
                                                 margin:1rem;
                                                 background-color: #f2f2f2;
-                                                box-shadow: 0 0 1rem #F2F2F2;}
+                                                box-shadow: 0 0 1rem #F2F2F2;
+                                        }
                                 }
 }
 
@@ -1480,7 +1494,8 @@ nav{
 
         a:hover{ 
                 color: #572E8B;
-                transition: 0.5s;}
+                transition: 0.5s;
+        }
 
                 a{ 
                         font-size: 3rem;
@@ -1494,7 +1509,8 @@ nav{
                         border: 0.2rem solid #F2F2F2;
                         margin: 10%;
                         width: 15rem;
-                        background-color: #000000;}
+                        background-color: #000000;
+                }
                 } 
 
 
@@ -1522,7 +1538,8 @@ nav{
                 font-weight: 900;
                 letter-spacing: 2rem;
                 color:#fffefe;
-                text-align: center;}
+                text-align: center;
+        }
         }
 
 .imgcont{ 
@@ -1533,7 +1550,8 @@ nav{
         margin-top: 10%;
         margin-left: 8rem;
 img{
-        width: 60rem;}
+        width: 60rem;
+}
 }
 
 article{ 
@@ -1543,7 +1561,8 @@ article{
         background-size: cover;
         background-attachment: fixed;
         margin-left:1%;
-        margin-right:1%;}
+        margin-right:1%;
+}
 
 p{ 
         word-spacing: 0.1rem;
@@ -1553,7 +1572,8 @@ p{
         color: #d8d5d5 ;
         font-size: 1.9rem;
         margin: 5%;
-        padding: 2%;}
+        padding: 2%;
+}
 
 .btndownload{ 
         display: flex;
@@ -1566,7 +1586,8 @@ p{
         text-transform: uppercase;
         padding-right: 7%;
 
-a{ text-decoration: none;}
+a{ text-decoration: none;
+}
 
 
 .btndd{ 
@@ -1574,11 +1595,13 @@ a{ text-decoration: none;}
         font-size: 4rem;
         border: 0.2rem solid #F2F2F2;
         width: 40rem;
-        background-color: #000000;}
+        background-color: #000000;
+}
 
 .btndd:hover{
         transition: 0.3s;
-        color: #038C4C;}
+        color: #038C4C;
+}
 }
 
 .h3conteiner{ 
@@ -1596,7 +1619,8 @@ h3{
         font-size: 10rem;
         text-align: center;
         text-transform: uppercase;
-        text-shadow:0 0 1rem #F2F2F2;}
+        text-shadow:0 0 1rem #F2F2F2;
+}
 }
 }
 /* ARTE & ANALOG PAGE */
@@ -1607,7 +1631,8 @@ h3{
         align-items: center;
         height: 4rem;
 
-nav ul li{ margin-top: 1rem; }
+nav ul li{ margin-top: 1rem; 
+}
 
 a{ 
         margin-top: 3%;
@@ -1627,7 +1652,8 @@ img{
         margin: 4%;
         box-shadow: 0 0 2rem #000000,inset 0 0 2rem #000000; 
         width: 110rem;
-}}
+}
+}
 
 .article-container{ 
         display: flex;
@@ -1665,7 +1691,8 @@ img{
                         margin-right: 10rem;
                         box-shadow: 0 0 2rem #000000,inset 0 0 2rem #000000; 
                         width: 55rem;
-                        height: 55rem;}
+                        height: 55rem;
+                }
         }
 }
 
@@ -1684,7 +1711,8 @@ img{
         background-color: #000000;
         color: aliceblue;
         text-shadow: 0 0 2rem #000000;
-p{ margin: 5%;}
+p{ margin: 5%;
+}
 }
 
 .grid-aside-analog{ 
@@ -1715,7 +1743,8 @@ img{
         object-fit: cover;
         border-radius: 5%;
         margin: 2%;
-        width: 55rem;}
+        width: 55rem;
+}
         
 nav{ 
         border: none;
@@ -1742,11 +1771,6 @@ nav{
         }
 
 }
-
-
-
-
-
 }
 
 .grid-section{
@@ -1762,7 +1786,8 @@ nav{
         p{ 
                 text-align: center;
                 text-transform: uppercase;
-                margin:5%;}
+                margin:5%;
+        }
         
         
 }
@@ -1789,12 +1814,14 @@ nav{
                 margin: 10%;
                 font-size: 6rem;
                 text-align: center;
-                text-transform: uppercase;}
+                text-transform: uppercase;
+        }
 
                 p:hover{ 
                         color: #572E8B;
                         transition: 0.5s;
-                        text-shadow: 0 0 0 #572E8B;}
+                        text-shadow: 0 0 0 #572E8B;
+                }
 }
 
 .grid-footer-analog{ margin-top: 5%;}
@@ -1838,15 +1865,10 @@ nav{
         height: 4rem;
         width: 100%;
         
-    nav ul li{ margin-top: 1rem;}
+nav ul li{ margin-top: 1rem;
+}
 }
 
-
-
-
-
-
 }
-
 }
 
