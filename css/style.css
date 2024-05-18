@@ -39,6 +39,11 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-left: 0.5rem;
+    transition: all 2s;
+  }
+  html body header h1:hover {
+    transform: matrix(360deg);
+    width: 20rem;
   }
   html body header nav {
     display: none;
@@ -54,6 +59,11 @@
     color: #f2f2f2;
     width: 3rem;
     height: 3rem;
+    transition: all 2s;
+  }
+  html body header .dropdown #menu-button svg:hover {
+    transform: matrix(360deg);
+    width: 10rem;
   }
   html body header .dropdown-menu {
     background-color: #000000;
@@ -98,6 +108,11 @@
     margin-top: 2rem;
     margin-bottom: 4rem;
     width: 15rem;
+    transition: all 3s;
+  }
+  html body .media-first img:hover {
+    transform: matrix(360deg);
+    width: 20rem;
   }
   html body .media-first .article-visible {
     display: flex;

@@ -8,13 +8,12 @@
             padding: 0;
             box-sizing: border-box;
             /* border: 1px solid red; */}
-    $negro:#000000;
-    $blanco:#f2f2f2;
+            $negro:#000000;
+            $blanco:#f2f2f2;
+            $sizes: 2rem, 4rem, 5rem;
     html{
             font-size: 62.5%;
-            
-            
-        body{
+            body{
                 font-family: "Poppins", sans-serif;
                 font-style: normal;
                 background-image:url(./background1.jpg);
@@ -42,7 +41,12 @@
                         margin-top: 2rem;
                         margin-bottom: 2rem;
                         margin-left: 0.5rem;
+                        transition: all 2s;
                     }
+                    h1:hover{ 
+                        transform:matrix(360deg)();
+                        width: 20rem;
+                        }
                     nav{
                         display: none;
                     }
@@ -50,12 +54,18 @@
                         display: flex;
                         margin-right:0.5rem;
                     #menu-button{
+
                         background-color: $negro;
                     svg{
                         color: $blanco;
                         width: 3rem; 
                         height: 3rem;
+                        transition: all 2s;
                 }
+                svg:hover{ 
+                    transform:matrix(360deg)();
+                    width: 10rem;
+                    }
             }
             
                     }
@@ -94,11 +104,16 @@
                             text-transform: uppercase;
                             color: #4b4747;}
                         }
-                    img{  
+                    img{ 
                         border-radius: 50rem;
                         margin-top: 2rem;
                         margin-bottom: 4rem;
                         width: 15rem; 
+                        transition: all 3s;
+                        }
+                        img:hover{ 
+                        transform:matrix(360deg)();
+                        width: 20rem;
                         }
                     .article-visible{
                         display: flex;
@@ -424,24 +439,21 @@
                         margin: 2rem;
                         width: 15rem;
                     }
-            audio{
-                margin: 1rem; 
-                    width: 10rem;
-                    height: 1.5rem;}
-            
-            h2{ 
-                    text-align: center;
-                    text-transform: uppercase;
-                    color: #2dbe4f;
-                    margin:1rem;
-            
-            }
+                    audio{
+                        margin: 1rem; 
+                        width: 10rem;
+                        height: 1.5rem;}
+                    
+                    h2{ 
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: #2dbe4f;
+                        margin:1rem;
+                    }
                 }
                 .header-contact{ 
                     height: 4rem;
-            
                 h1{ margin: 1%;}
-            
                 nav ul li{ margin-top: 1rem; }
                 }
                 .maintres form{ 
