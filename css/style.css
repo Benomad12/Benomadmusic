@@ -27,6 +27,11 @@
     align-items: center;
     background-color: #000000;
   }
+  @keyframes h1moving {
+    0% {
+      transform: scaley(1.9);
+    }
+  }
   html body header h1 {
     text-align: left;
     font-size: 1.2rem;
@@ -39,7 +44,9 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-left: 0.5rem;
-    transition: all 2s;
+    animation-name: h1moving;
+    animation-duration: 5s;
+    animation-timing-function: linear;
   }
   html body header h1:hover {
     transform: matrix(360deg);
@@ -104,17 +111,27 @@
     text-transform: uppercase;
     color: #4b4747;
   }
+  @keyframes moverimg {
+    0% {
+      transform: scale(1.1, 1.1);
+    }
+    25% {
+      transform: scale3d(1.2, 1.2);
+    }
+  }
+  html body .media-first .grid-section-zero .logotype {
+    animation-name: moverimg;
+    animation-duration: 8s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
   html body .media-first .grid-section-zero img {
     border-radius: 50rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-right: 1.3rem;
     width: 25rem;
-    transition: all 3s;
-  }
-  html body .media-first .grid-section-zero img:hover {
-    transform: matrix(360deg);
-    width: 29rem;
   }
   html body .media-first .grid-section-zero .article-visible {
     display: flex;
@@ -1694,6 +1711,20 @@
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+  }
+  @keyframes moverimg {
+    0% {
+      transform: scale(1.1, 1.1);
+    }
+    25% {
+      transform: scale3d(1.2, 1.2);
+    }
+  }
+  html body main .logotype {
+    animation-name: moverimg;
+    animation-duration: 8s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
   }
   html body main nav {
     display: flex;
