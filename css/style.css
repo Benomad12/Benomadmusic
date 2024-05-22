@@ -20,12 +20,12 @@
     overflow-x: hidden;
   }
   html body header {
-    transition: 0.2s;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: #000000;
+    transition: 0.2s;
   }
   @keyframes h1moving {
     0% {
@@ -188,7 +188,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     border: 0.2rem solid #f2f2f2;
     border-radius: 10%;
     background-color: transparent;
@@ -308,6 +308,7 @@
     align-items: center;
     margin-right: 2rem;
     padding-top: 5rem;
+    list-style-type: none;
   }
   html body footer .footer-nav ul li a {
     text-decoration: none;
@@ -364,9 +365,9 @@
   }
   html body .seccondmain article {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     box-shadow: 0 0 2rem #000000, inset 0 0 3rem #000000;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(36, 6, 42, 0.6)), url(./prlx.jpg);
   }
@@ -379,9 +380,9 @@
   }
   html body .seccondmain .foto-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
   }
   html body .seccondmain .foto-container .fotoc {
     margin-bottom: 1rem;
@@ -451,8 +452,8 @@
   html body .audio-cont {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     background-color: #1b1a1a;
     margin-top: 20rem;
   }
@@ -582,6 +583,7 @@
   html body .maindownload {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin-top: 20%;
   }
@@ -821,63 +823,78 @@
     overflow-x: hidden;
   }
   html body header {
-    transition: 0.2s;
+    transition: 0.1s;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #000000;
-    width: 100%;
+    padding: 1rem;
+  }
+  @keyframes h1moving {
+    0% {
+      transform: scaley(1.6);
+    }
   }
   html body header h1 {
-    text-align: center;
-    font-size: 2rem;
+    text-align: left;
+    font-size: 1.8rem;
     text-transform: uppercase;
     color: #f2F2F2;
-    word-spacing: 100%;
-    letter-spacing: 1.5rem;
+    letter-spacing: 1rem;
     font-family: "poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-left: 0.5rem;
+    animation-name: h1moving;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+  }
+  html body header h1:hover {
+    transform: matrix(360deg);
   }
   html body header nav {
     display: none;
   }
   html body header .dropdown {
     display: flex;
-    align-items: center;
-    padding-left: 10rem;
+    margin-right: 0.5rem;
   }
   html body header .dropdown #menu-button {
-    text-transform: uppercase;
     background-color: #000000;
-    height: 2.7rem;
   }
   html body header .dropdown #menu-button svg {
     color: #f2f2f2;
-    width: 4rem;
+    width: 8rem;
     height: 4rem;
+    transition: all 2s;
+  }
+  html body header .dropdown #menu-button svg:hover {
+    width: 5rem;
+    color: #572E8B;
   }
   html body header .dropdown-menu {
-    background-color: #f2f2f2;
+    background-color: #000000;
+  }
+  html body header .dropdown-menu li {
+    margin-top: 0.8rem;
   }
   html body header .dropdown-menu a {
-    font-size: 1.5rem;
+    font-size: 2rem;
     background-color: #000000;
     text-transform: uppercase;
-    color: #F2F2F2;
+    color: #f2f2f2;
+    padding-top: 1rem;
   }
   html body .media-first {
-    margin-top: 30%;
-    margin-bottom: 40rem;
+    margin-top: 40%;
+    margin-bottom: 15rem;
   }
   html body .media-first .grid-section-zero {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
   html body .media-first .grid-section-zero .h4-contain {
@@ -889,120 +906,88 @@
     opacity: 70%;
     box-shadow: 0 0 0.5rem #000000;
     width: 40rem;
-    margin-bottom: 18rem;
+    margin-bottom: 30%;
   }
   html body .media-first .grid-section-zero .h4-contain h4 {
     letter-spacing: 1.1rem;
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: center;
     text-transform: uppercase;
     color: #4b4747;
   }
+  @keyframes moverimg {
+    0% {
+      transform: scaley(1.1, 1.1);
+    }
+    25% {
+      transform: scaley(1.5, 1.5);
+    }
+  }
+  html body .media-first .grid-section-zero .logotype {
+    animation-name: moverimg;
+    animation-duration: 8s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
   html body .media-first .grid-section-zero img {
-    border-radius: 50rem;
-    margin-top: 5rem;
-    margin-bottom: 10rem;
-    width: 30rem;
+    border-radius: 50%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 1.3rem;
+    width: 40rem;
   }
   html body .media-first .grid-section-zero .article-visible {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 15rem;
     background-color: #000000;
     opacity: 70%;
-    margin-top: 5rem;
-    margin-bottom: 10rem;
-    width: 20rem;
+    margin-top: 10rem;
   }
   html body .media-first .grid-section-zero .article-visible p {
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
     font-weight: 600;
     text-transform: uppercase;
-    color: #572E8B;
-    opacity: 60%;
+    color: #4b4747;
   }
   html body .html-main {
     display: none;
-  }
-  html body .carousel-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
-    margin-bottom: 10rem;
-    background-color: #572E8B;
-    opacity: 7 0%;
-  }
-  html body .carousel-container h3 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 3rem;
-    margin-top: 2rem;
-    color: #c3c3be;
-    background-color: #000000;
-    opacity: 90%;
-    width: 100%;
-  }
-  html body .carousel-slide {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    width: 70rem;
-    background-color: #323232;
-    margin: 4rem;
-  }
-  html body .carousel-slide .elementos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1 0 auto;
-    margin: 0.5rem;
-    margin: 1.3rem;
-  }
-  html body .carousel-slide .elementos img {
-    width: 30rem;
-  }
-  html body .carousel-slide .elementos audio {
-    margin: 10%;
-    width: 15rem;
-    height: 2rem;
   }
   html body aside {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 30rem;
-    margin: 10rem;
+    padding-top: 25rem;
     margin-bottom: 20rem;
   }
   html body aside img {
     box-shadow: 0 0 2rem #000000;
     width: 25rem;
-    margin: 2rem;
+    margin: 2%;
   }
   html body aside article {
     border: 0.1rem solid #000000;
     box-shadow: 0 0 1rem #000000;
     background-color: #000000;
-    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     opacity: 70%;
+    margin: 10%;
   }
   html body aside article p {
+    margin: 10%;
     font-size: 2rem;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: #F2F2F2;
     background-color: #000000;
-    margin: 5%;
     opacity: 60%;
   }
   html body aside nav {
@@ -1014,7 +999,6 @@
     border-radius: 10%;
     background-color: transparent;
     width: 15rem;
-    margin: 2%;
   }
   html body aside nav a {
     text-decoration: none;
@@ -1041,40 +1025,81 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2rem;
-    background-color: #323232;
-    opacity: 70%;
+    margin: 1rem;
+    margin-bottom: 15rem;
   }
   html body .media .grid-section-zero {
-    display: flex;
-    flex-direction: column;
     background-color: #572E8B;
   }
-  html body .media P {
+  html body .media .grid-section-zero article p {
+    text-align: center;
     text-transform: uppercase;
-    font-size: 3rem;
-    font-weight: 400;
-    text-align: center;
-    color: #000000;
+    font-size: 2.7rem;
+    color: #f2f2f2;
+    margin: 2rem;
   }
-  html body .media .download-btn {
+  html body .media .grid-section-zero .download-btn {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    width: 20rem;
-    margin-top: 3rem;
-    margin-left: 27rem;
-    margin-bottom: 5rem;
-    border: 0.5rem solid #000000;
+    align-items: center;
   }
-  html body .media .download-btn a {
-    text-decoration: none;
+  html body .media .grid-section-zero .download-btn a {
+    font-size: 1.8rem;
     text-align: center;
-    color: #f2F2F2;
-    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 1rem;
+    border: 0.3rem solid #000000;
+    width: 12rem;
+    color: #000000;
   }
   html body .organized-list {
     display: none;
+  }
+  html body .carousel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rem;
+  }
+  html body .carousel-container h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 6rem;
+    color: #572E8B;
+    background-color: #000000;
+    opacity: 80%;
+    margin-bottom: 5rem;
+  }
+  html body .carousel-slide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: #000000;
+    opacity: 90%;
+    width: 60rem;
+  }
+  html body .carousel-slide .elementos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+    margin: 2rem;
+    margin-top: 2rem;
+  }
+  html body .carousel-slide .elementos img {
+    width: 40rem;
+  }
+  html body .carousel-slide .elementos audio {
+    margin-top: 4%;
+    width: 40rem;
+    height: 4rem;
   }
   html body .footernav {
     display: none;
@@ -1091,23 +1116,22 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
   }
-  html body footer .iconos a {
+  html body footer .iconos .iconos a {
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     border-radius: 20%;
-    width: 4rem;
-    height: 1.2rem;
-    margin-top: 4rem;
   }
-  html body footer svg {
-    width: 2rem;
-    height: 1.2rem;
+  html body footer .iconos svg {
+    width: 10rem;
+    height: 2rem;
     color: #f2f2f2;
     opacity: 80%;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   html body footer .footer-nav ul li {
     margin-top: 1rem;
@@ -1117,19 +1141,19 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-right: 2rem;
     padding-top: 5rem;
+    list-style-type: none;
   }
   html body footer .footer-nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #BFBFBF;
-    font-size: 1.2rem;
+    color: #f2f2f2;
+    font-size: 1.7rem;
     margin-top: 30%;
-    opacity: 0.8;
+    opacity: 0.9;
   }
   html body footer .footer-nav ul li a:hover {
-    opacity: 1;
+    opacity: 1rem;
     color: #572E8B;
   }
   html body footer .footerbotom {
@@ -1142,8 +1166,9 @@
     width: 100%;
   }
   html body footer .footerbotom p {
+    text-decoration: none;
     margin-top: 5rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #F2F2F2;
   }
   html body footer .designes {
@@ -1157,53 +1182,57 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 40rem;
-    margin-bottom: 50%;
+    margin-top: 15rem;
   }
   html body .seccondmain h2 {
-    font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
-    color: #f2f2f2;
+    font-size: 5rem;
+    color: #572E8B;
     background-color: #000000;
-    opacity: 70%;
-    margin-bottom: 10%;
+    opacity: 80%;
+    margin-bottom: 40%;
   }
   html body .seccondmain article {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 5%;
+    text-align: center;
     box-shadow: 0 0 2rem #000000, inset 0 0 3rem #000000;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(./prlx.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(36, 6, 42, 0.6)), url(./prlx.jpg);
   }
   html body .seccondmain p {
-    margin: 5%;
-    font-size: 1.4rem;
-    color: #aeacac;
+    margin: 2%;
+    font-size: 1.8rem;
+    color: #f2f2f2;
+    opacity: 70%;
     text-transform: uppercase;
   }
-  html body .seccondmain .fotoc {
-    margin-left: 9.5rem;
+  html body .seccondmain .foto-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  html body .seccondmain .foto-container .fotoc {
     margin-bottom: 1rem;
-    box-shadow: 0 0 2rem #000000, inset 0 0 3rem #000000;
-    border-radius: 20%;
-    width: 12rem;
+    box-shadow: 0 0 2rem #000000;
+    border-radius: 10%;
+    width: 25rem;
   }
   html body .introaside {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50rem;
   }
   html body .introaside .master-class {
     background-color: #000000;
+    margin-bottom: 2rem;
   }
   html body .introaside .master-class .master {
     font-weight: 700;
-    font-size: 2.1rem;
+    font-size: 5rem;
     color: #572E8B;
     margin: 2%;
   }
@@ -1214,7 +1243,16 @@
     align-items: center;
   }
   html body .introaside .image img {
-    width: 30rem;
+    width: 50rem;
+  }
+  html body .introaside h2 {
+    font-size: 4rem;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f2f2f2;
+    transition: 0.5s;
   }
   html body .introaside nav {
     display: flex;
@@ -1223,259 +1261,270 @@
     border: 0.2rem solid #572E8B;
     background-color: transparent;
     text-align: center;
-    margin: 2%;
+    margin: 4%;
   }
   html body .introaside nav .btn {
     color: #ffffff;
     transition: 0.5s;
-    font-size: 1.3rem;
+    font-size: 1.9rem;
   }
   html body .introaside nav .btn:hover {
-    background-color: #572E8B;
+    background-color: #000000;
     transition: 0.2s;
   }
-  html body .introaside h2 {
-    font-size: 1.5rem;
-    margin-bottom: 3%;
-    margin-top: 3%;
-    text-align: center;
-    text-transform: uppercase;
-    color: #F2F2F2;
-    transition: 0.5s;
-  }
   html body .introaside h2:hover {
-    background-color: black;
+    background-color: #000000;
     transition: 0.2s;
   }
   html body .introaside p {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   html body .audio-cont {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #000000;
-    height: 9rem;
-    margin-top: 40rem;
-    margin-bottom: 10rem;
+    background-color: #1b1a1a;
+    margin-top: 20rem;
   }
-  html body .audio-cont audio {
-    width: 10rem;
-    height: 1rem;
+  html body .audio-cont img {
+    margin: 5rem;
+    width: 30rem;
+    transition: all 10s;
+  }
+  html body .audio-cont img:hover {
+    transform: rotatey(360deg);
+  }
+  html body .audio-cont .audio-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    background-color: #000000;
+    width: 100%;
+  }
+  html body .audio-cont .audio-content audio {
+    justify-content: center;
+    margin: 1rem;
+    width: 20rem;
+    height: 2.5rem;
   }
   html body .audio-cont h2 {
     text-align: center;
     text-transform: uppercase;
+    font-size: 3rem;
     color: #2dbe4f;
-    margin: 1rem;
-  }
-  html body .header-contact {
-    height: 4rem;
-  }
-  html body .header-contact h1 {
-    margin: 1%;
-  }
-  html body .header-contact nav ul li {
-    margin-top: 1rem;
+    margin: 4rem;
   }
   html body .maintres form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
   }
   html body main form input {
     position: relative;
-    height: 4rem;
-    width: 30rem;
+    height: 8rem;
+    width: 60rem;
     outline: none;
-    font-size: 1rem;
+    font-size: 2.5rem;
     padding: 0 1rem;
-    line-height: 2rem;
     border-radius: 0.4rem;
     border: 0.1rem solid white;
     background-color: transparent;
     box-shadow: 0 0 1rem #000000, inset 0 0 2rem #000000;
     color: #ffffff;
     transition: 0.2s;
-    z-index: 1111;
+    margin-bottom: 4rem;
   }
   html body input::-moz-placeholder {
     position: absolute;
-    font-size: 1rem;
-    padding: 0 0.2rem;
-    margin: 1rem;
-    background-color: transparent;
-    color: #F2F2F2;
-    background-color: #000000;
-    box-shadow: 0 0 1rem #F2F2F2;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #f2f2f2;
+    box-shadow: 0 0 1rem #000000;
   }
   html body input::placeholder {
     position: absolute;
-    font-size: 1rem;
-    padding: 0 0.2rem;
-    margin: 1rem;
-    background-color: transparent;
-    color: #F2F2F2;
-    background-color: #000000;
-    box-shadow: 0 0 1rem #F2F2F2;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #f2f2f2;
+    box-shadow: 0 0 1rem #000000;
   }
   html body label {
-    font-size: 1rem;
+    font-size: 3rem;
     text-transform: uppercase;
-    margin: 5%;
+    margin: 1%;
     background-color: #f2f2f2;
-    width: 10rem;
+    width: 20rem;
+    margin-right: 40rem;
   }
   html body textarea {
-    border: 0.2rem solid white;
+    border: 0.2rem solid #f2f2f2;
     box-shadow: 0 0 1rem #000000, inset 0 0 2rem #000000;
     background-color: transparent;
+    width: 78%;
   }
   html body textarea::-moz-placeholder {
     position: absolute;
-    padding: 0 0.2rem;
-    margin: 1rem;
-    background-color: transparent;
-    color: #F2F2F2;
-    background-color: #000000;
-    box-shadow: 0 0 1rem #F2F2F2;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    color: #f2f2f2;
+    box-shadow: 0 0 1rem #000000;
   }
   html body textarea::placeholder {
     position: absolute;
-    padding: 0 0.2rem;
-    margin: 1rem;
-    background-color: transparent;
-    color: #F2F2F2;
-    background-color: #000000;
-    box-shadow: 0 0 1rem #F2F2F2;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    color: #f2f2f2;
+    box-shadow: 0 0 1rem #000000;
   }
   html body .btnsend {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 25%;
   }
   html body .btnsend a:hover {
     color: #572E8B;
     transition: 0.5s;
   }
   html body .btnsend a {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
     text-decoration: none;
-    color: #F2F2F2;
     text-transform: uppercase;
+    color: #F2F2F2;
   }
-  html body .btnsend a .btnn {
+  html body .btnsend a p {
     border: 0.2rem solid #F2F2F2;
-    margin: 10%;
-    width: 8rem;
     background-color: #000000;
+    width: 15rem;
   }
   html body .maindownload {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin-top: 20%;
   }
   html body .maindownload .h2-container {
-    text-shadow: 0 0 1rem #000000;
+    background-color: #1b1a1a;
     margin-bottom: 15rem;
-    padding: 1%;
-    margin-left: 1%;
-    margin-right: 1%;
   }
   html body .maindownload .h2-container h2 {
-    font-size: 1rem;
-    font-weight: 900;
-    letter-spacing: 2rem;
-    color: #fffefe;
+    text-transform: uppercase;
     text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 2rem;
+    color: #572E8B;
+    margin: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  html body .maindownload .image-complement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 2, 0), rgba(0, 0, 0, 0.8));
+    padding-bottom: 2rem;
+  }
+  html body .maindownload .image-complement img {
+    width: 40rem;
   }
   html body .maindownload article {
-    box-shadow: 0 0 1rem #080e0b, inset 0 0 2rem #000000;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./prlx.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    margin-left: 1%;
-    margin-right: 1%;
-  }
-  html body .maindownload p {
-    word-spacing: 0.1rem;
-    text-shadow: 0 0 2rem #000000;
-    text-align: center;
-    text-transform: uppercase;
-    color: #d8d5d5;
-    font-size: 0.7rem;
-    margin: 5%;
-    padding: 2%;
-  }
-  html body .maindownload .btndownload {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 1rem #080e0b, inset 0 0 2rem #000000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(22, 2, 24, 0.8));
+    margin-bottom: 15rem;
+  }
+  html body .maindownload article p {
+    text-shadow: 0 0 2rem #000000;
+    text-align: center;
+    text-transform: uppercase;
+    color: #d8d5d5;
+    font-size: 1.9rem;
+    margin: 1rem;
+  }
+  html body .maindownload article .p2 {
+    display: none;
+  }
+  html body .maindownload .imgcont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  html body .maindownload .imgcont img {
+    padding-left: 3.5rem;
+    width: 40rem;
+  }
+  html body .maindownload .btndownload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     text-decoration: none;
-    color: #d7d2d2;
     text-transform: uppercase;
-    padding-right: 7%;
+    margin-bottom: 5rem;
   }
   html body .maindownload .btndownload a {
     text-decoration: none;
   }
   html body .maindownload .btndownload .btndd {
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 2.5rem;
+    color: #f2f2f2;
     border: 0.2rem solid #F2F2F2;
-    width: 14rem;
+    width: 16rem;
     background-color: #000000;
   }
   html body .maindownload .btndownload .btndd:hover {
     transition: 0.3s;
-    color: #038C4C;
+    color: #572E8B;
   }
   html body .maindownload .h3conteiner {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin-bottom: 15rem;
   }
   html body .maindownload .h3conteiner h3 {
     color: aliceblue;
-    padding-left: 7%;
-    letter-spacing: 2rem;
-    margin: 15%;
-    font-size: 1rem;
-    text-align: center;
+    letter-spacing: 6rem;
+    margin-left: 6rem;
+    font-size: 5rem;
     text-transform: uppercase;
     text-shadow: 0 0 1rem #F2F2F2;
+  }
+  html body .mainarte {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
   }
   html body .mainarte .im-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80rem;
-    width: 50rem;
   }
   html body .mainarte .im-container img {
-    margin: 4%;
     box-shadow: 0 0 2rem #000000, inset 0 0 2rem #000000;
-    width: 80rem;
-    height: 80rem;
+    width: 50rem;
   }
   html body .mainarte .article-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 4%;
-    background-color: #000000;
-    width: 70%;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    margin-top: 1rem;
+    margin-bottom: 5rem;
   }
   html body .mainarte .article-container article {
     margin: 4%;
@@ -1483,67 +1532,72 @@
   html body .mainarte .article-container article p {
     text-transform: uppercase;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     color: #F2F2F2;
+  }
+  html body .mainanalog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   html body .mainanalog .im-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 48rem;
-    width: 50rem;
+    margin-top: 5rem;
   }
   html body .mainanalog .im-container img {
-    margin-top: 2%;
     box-shadow: 0 0 2rem #000000, inset 0 0 2rem #000000;
-    width: 45rem;
-    height: 55rem;
-  }
-  html body .grid-header-analog {
-    height: 4rem;
-    width: 100%;
-  }
-  html body .grid-header-analog nav ul li {
-    margin-top: 1rem;
+    width: 41rem;
+    margin: 0.2rem;
   }
   html body .grid-article-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-left: 1.7%;
-    height: 20rem;
-    width: 96.6%;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1rem;
-    background-color: #000000;
-    color: aliceblue;
-    text-shadow: 0 0 2rem #000000;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    margin-top: 1rem;
+    margin: 0.2rem;
+    margin-bottom: 4rem;
   }
   html body .grid-article-container p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.8rem;
     margin: 5%;
+    color: aliceblue;
   }
   html body .grid-aside-analog {
-    box-shadow: 0 0 0.3rem #F2F2F2;
-    border: #F2F2F2;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    border-radius: 0.4rem;
+    border: #f2f2f2;
     background-color: #000000;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 55rem;
-    height: 55rem;
-    margin-top: 30%;
-    margin-left: 2rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    margin: 0.2rem;
   }
-  html body .grid-aside-analog h2 {
+  html body .grid-aside-analog aside {
+    height: 65rem;
+  }
+  html body .grid-aside-analog aside .section-not-visible-desktop {
+    display: flex;
+    align-items: center;
+    text-shadow: 0 0 2rem #000000;
+    margin-bottom: 1rem;
+  }
+  html body .grid-aside-analog aside .section-not-visible-desktop p {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4rem;
+    color: #572E8B;
+  }
+  html body .grid-aside-analog aside h2 {
     margin: 10%;
     font-size: 3rem;
     text-align: center;
@@ -1551,61 +1605,24 @@
     color: #572E8B;
     text-shadow: 0 0 2rem #000000;
   }
-  html body .grid-aside-analog img {
-    -o-object-fit: cover;
-       object-fit: cover;
+  html body .grid-aside-analog aside img {
     border-radius: 5%;
-    margin: 2%;
-    width: 36.2rem;
+    width: 30rem;
   }
-  html body .grid-aside-analog nav {
+  html body .grid-aside-analog aside nav {
     display: flex;
     justify-content: center;
+    margin-bottom: 5rem;
   }
-  html body .grid-aside-analog a {
+  html body .grid-aside-analog aside a {
     text-align: center;
     text-decoration: none;
   }
-  html body .grid-section {
-    text-align: center;
-    margin-left: 4%;
-    font-size: 8rem;
-    color: #572E8B;
-    text-shadow: 0 0 2rem #000000;
-    background-color: #000000;
-    height: 53rem;
+  html body .grid-aside-analog .grid-section {
+    display: none;
   }
-  html body .grid-section p {
-    margin: 5%;
-  }
-  html body .grid-sectione {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 9rem;
-    text-align: center;
-    box-shadow: 0 0 0.3rem #F2F2F2;
-    border: #F2F2F2;
-    color: #000000;
-    background-color: #000000;
-    text-shadow: 0 0 2rem #000000;
-    margin-top: 34.5%;
-    margin-bottom: 10%;
-    margin-right: 2rem;
-    width: 50rem;
-    height: 55rem;
-  }
-  html body .grid-sectione p {
-    margin: 10%;
-    font-size: 6rem;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  html body .grid-sectione p:hover {
-    color: #572E8B;
-    transition: 0.5s;
-    text-shadow: 0 0 0 #572E8B;
+  html body .grid-aside-analog .grid-sectione {
+    display: none;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1613,10 +1630,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
   }
   html {
     font-size: 62.5%;
+    /* ASIDE  */
+    /* FOOTER */
+    /* PAGE ABOUT ME */
+    /* CONTACTO */
+    /*DOWNLOAD PAGE */
   }
   html body {
     font-family: "Poppins", sans-serif;
@@ -1628,13 +1649,6 @@
     background-attachment: fixed;
     overflow-x: hidden;
     /* MAIN */
-    /* ASIDE  */
-    /* FOOTER */
-    /* PAGE ABOUT ME */
-    /* CONTACTO */
-    /*DOWNLOAD PAGE */
-    /* ARTE & ANALOG PAGE */
-    /* GRID ANALOG PAGE */
   }
   html body header {
     display: flex;
@@ -1702,7 +1716,7 @@
     margin-top: 7%;
   }
   html body main h2 {
-    letter-spacing: 0.5rem;
+    letter-spacing: 1rem;
     text-shadow: 0 0 2rem #000000;
     font-size: 3rem;
     text-align: center;
@@ -1712,31 +1726,16 @@
     font-weight: 400;
     font-style: normal;
   }
-  @keyframes moverimg {
-    0% {
-      transform: scale(1.1, 1.1);
-    }
-    25% {
-      transform: scale3d(1.2, 1.2);
-    }
-  }
-  html body main .logotype {
-    animation-name: moverimg;
-    animation-duration: 8s;
-    animation-delay: 0.2s;
-    animation-iteration-count: infinite;
-  }
-  html body main nav {
+  html body nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  html body main nav a {
+  html body nav a {
     text-decoration: none;
-    transition: all 1s;
   }
-  html body aside {
+  html aside {
     margin: 5%;
     background-repeat: no-repeat;
     background-position: center;
@@ -1745,13 +1744,13 @@
     padding: 3%;
     width: 60rem;
   }
-  html body aside img {
+  html aside img {
     box-shadow: 0 0 3rem #000000;
     width: 30rem;
     margin-bottom: 2%;
     margin-top: 5rem;
   }
-  html body aside article {
+  html aside article {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1762,7 +1761,7 @@
     border: 0.1rem solid #000000;
     box-shadow: 0 0 1rem #ffffff;
   }
-  html body aside article p {
+  html aside article p {
     margin: 5%;
     font-size: 1.7rem;
     font-family: "Poppins", sans-serif;
@@ -1772,7 +1771,7 @@
     background-color: #000000;
     background-size: contain;
   }
-  html body aside nav {
+  html aside nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1782,7 +1781,7 @@
     text-align: center;
     margin: 2%;
   }
-  html body aside nav p {
+  html aside nav p {
     background-color: transparent;
     font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
@@ -1794,49 +1793,49 @@
     text-transform: uppercase;
     margin: 2%;
   }
-  html body aside nav p:hover {
+  html aside nav p:hover {
     background-color: #572E8B;
     transition: 0.5s;
   }
-  html body aside nav a {
+  html aside nav a {
     text-decoration: none;
   }
-  html body .media {
+  html .media {
     display: none;
   }
-  html body .organized-list {
+  html .organized-list {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 10%;
     margin-left: 60%;
   }
-  html body .organized-list ol {
+  html .organized-list ol {
     list-style-type: none;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
   }
-  html body .organized-list ol li {
+  html .organized-list ol li {
     width: 70rem;
     border: 0.2rem solid #572E8B;
     margin: 5%;
   }
-  html body .organized-list .h4-container {
+  html .organized-list .h4-container {
     text-transform: uppercase;
     align-items: center;
   }
-  html body .organized-list .h4-container h4 {
+  html .organized-list .h4-container h4 {
     color: #f2f2f2;
     font-size: 3rem;
   }
-  html body .organized-list .h4-container h4:hover {
+  html .organized-list .h4-container h4:hover {
     background-color: #000000;
     color: #cbbf1e;
     transition: 0.3s;
   }
-  html body .organized-list h5 {
+  html .organized-list h5 {
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -1850,13 +1849,13 @@
     box-shadow: 0 0 0.5rem #F2F2F2;
     width: 15rem;
   }
-  html body .organized-list .p-container {
+  html .organized-list .p-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 5%;
   }
-  html body .organized-list .p-container p {
+  html .organized-list .p-container p {
     border: 0.1rem solid #989696;
     margin: 1%;
     text-align: center;
@@ -1867,27 +1866,27 @@
     color: #000000;
     background-color: #c2c0c0;
   }
-  html body .organized-list img {
+  html .organized-list img {
     margin-left: 2%;
     width: 30rem;
   }
-  html body .organized-list ol li audio {
+  html .organized-list ol li audio {
     margin-top: 1%;
     margin-left: 55%;
     margin-bottom: 5%;
     width: 30rem;
     height: 2rem;
   }
-  html body footer {
+  html footer {
     background-color: #000000;
     height: 30rem;
   }
-  html body footer .iconos {
+  html footer .iconos {
     margin-top: 20%;
     display: flex;
     justify-content: center;
   }
-  html body footer .iconos a {
+  html footer .iconos a {
     text-decoration: none;
     margin: 3rem;
     border-radius: 1.5rem;
@@ -1895,28 +1894,28 @@
     margin-top: 3rem;
     background-color: whitesmoke;
   }
-  html body footer .iconos a svg {
+  html footer .iconos a svg {
     width: 2rem;
     height: 2rem;
     color: #000000;
     opacity: 80%;
   }
-  html body footer .iconos a:hover {
+  html footer .iconos a:hover {
     background-color: #572E8B;
     transition: 0.2s;
   }
-  html body footer .iconos a:hover svg {
+  html footer .iconos a:hover svg {
     color: #F2F2F2;
     transition: 0, 1s;
   }
-  html body footer .footernav {
+  html footer .footernav {
     margin: 3rem 0;
   }
-  html body footer .footernav ul {
+  html footer .footernav ul {
     display: flex;
     justify-content: center;
   }
-  html body footer .footernav ul li a {
+  html footer .footernav ul li a {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 1.5rem;
@@ -1924,41 +1923,44 @@
     opacity: 0.8;
     color: #BFBFBF;
   }
-  html body footer .footernav ul li a:hover {
+  html footer .footernav ul li a:hover {
     opacity: 1;
     color: #572E8B;
   }
-  html body footer .footerbotom {
+  html footer .footerbotom {
     text-align: center;
     text-decoration: none;
     padding: 2rem;
     background-color: #000000;
   }
-  html body footer .footerbotom p {
+  html footer .footerbotom p {
     text-decoration: none;
     font-size: 1.5rem;
     color: #F2F2F2;
   }
-  html body footer .designes {
+  html footer .designes {
     font-size: 1.5rem;
     text-transform: uppercase;
     opacity: 0.7;
     margin: 0rem 0.5rem;
     letter-spacing: 0.1rem;
   }
-  html body .footer-nav {
+  html .footer-nav {
     display: none;
   }
-  html body .audio-cont {
+  html .audio-cont {
     display: none;
   }
-  html body .seccondmain {
+  html .seccondmain {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  html body .seccondmain article {
+  html .seccondmain h2 {
+    display: none;
+  }
+  html .seccondmain article {
     text-align: center;
     border-radius: 5%;
     box-shadow: 0 0 2rem #000000, inset 0 0 3rem #000000;
@@ -1968,37 +1970,37 @@
     background-attachment: fixed;
     width: 90rem;
   }
-  html body .seccondmain article p {
+  html .seccondmain article p {
     margin: 5%;
     font-size: 2rem;
     color: #aeacac;
     text-transform: uppercase;
   }
-  html body .seccondmain .fotoc {
+  html .seccondmain .fotoc {
     box-shadow: 0 0 2rem #000000, inset 0 0 3rem #000000;
     border-radius: 20%;
     margin: 7%;
     width: 30rem;
   }
-  html body .introaside {
+  html .introaside {
     margin: 5%;
   }
-  html body .introaside .master-class {
+  html .introaside .master-class {
     background-color: #572E8B;
   }
-  html body .introaside .master-class h2 {
+  html .introaside .master-class h2 {
     font-weight: 900;
     text-align: center;
   }
-  html body .introaside .image {
+  html .introaside .image {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  html body .introaside .image img {
+  html .introaside .image img {
     width: 40rem;
   }
-  html body .introaside h2 {
+  html .introaside h2 {
     margin-bottom: 2%;
     text-align: center;
     text-transform: uppercase;
@@ -2007,11 +2009,11 @@
     transition: 0.5s;
     background-color: #000000;
   }
-  html body .introaside h2:hover {
+  html .introaside h2:hover {
     background-color: black;
     transition: 0.2s;
   }
-  html body .introaside nav {
+  html .introaside nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2021,29 +2023,29 @@
     width: 15rem;
     margin: 2%;
   }
-  html body .introaside nav .btn {
+  html .introaside nav .btn {
     color: #ffffff;
     transition: 0.5s;
     font-size: 1.5rem;
   }
-  html body .introaside nav .btn:hover {
+  html .introaside nav .btn:hover {
     background-color: #572E8B;
     transition: 0.5s;
   }
-  html body .carousel-slide {
+  html .carousel-slide {
     display: none;
   }
-  html body .subtitel-not-visible {
+  html .subtitel-not-visible {
     display: none;
   }
-  html body .media-first {
+  html .media-first {
     display: none;
   }
-  html body .maintres form {
+  html .maintres form {
     display: flex;
     flex-direction: column;
   }
-  html body .maintres form input {
+  html .maintres form input {
     width: 60rem;
     outline: none;
     font-size: 2.5rem;
@@ -2055,7 +2057,7 @@
     opacity: 80%;
     box-shadow: 0 0 1rem #000000, inset 0 0 2rem #000000;
   }
-  html body .maintres form label {
+  html .maintres form label {
     font-size: 2rem;
     text-transform: uppercase;
     margin: 5%;
@@ -2063,7 +2065,7 @@
     color: #F2F2F2;
     width: 15rem;
   }
-  html body .maintres form input::-moz-placeholder {
+  html .maintres form input::-moz-placeholder {
     position: absolute;
     font-size: 1.7rem;
     padding: 0 0.2rem;
@@ -2071,7 +2073,7 @@
     background-color: transparent;
     color: #000000;
   }
-  html body .maintres form input::placeholder {
+  html .maintres form input::placeholder {
     position: absolute;
     font-size: 1.7rem;
     padding: 0 0.2rem;
@@ -2079,7 +2081,7 @@
     background-color: transparent;
     color: #000000;
   }
-  html body .maintres form textarea {
+  html .maintres form textarea {
     font-size: 3rem;
     color: #000000;
     border: 0.2rem solid #f2f2f2;
@@ -2087,21 +2089,21 @@
     background-color: #f2f2f2;
     opacity: 60%;
   }
-  html body .maintres form textarea textarea::-moz-placeholder {
+  html .maintres form textarea textarea::-moz-placeholder {
     position: absolute;
     padding: 0 0.2rem;
     margin: 1rem;
     background-color: #f2f2f2;
     box-shadow: 0 0 1rem #F2F2F2;
   }
-  html body .maintres form textarea textarea::placeholder {
+  html .maintres form textarea textarea::placeholder {
     position: absolute;
     padding: 0 0.2rem;
     margin: 1rem;
     background-color: #f2f2f2;
     box-shadow: 0 0 1rem #F2F2F2;
   }
-  html body .btnsend {
+  html .btnsend {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2109,46 +2111,54 @@
     margin-bottom: 5%;
     width: 15rem;
   }
-  html body .btnsend a:hover {
+  html .btnsend a:hover {
     color: #572E8B;
     transition: 0.5s;
   }
-  html body .btnsend a {
+  html .btnsend a {
     font-size: 3rem;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     color: #F2F2F2;
   }
-  html body .btnsend a .btnn {
+  html .btnsend a .btnn {
     border: 0.2rem solid #F2F2F2;
     margin: 10%;
     width: 15rem;
     background-color: #000000;
   }
-  html body .maindownload {
+  html .maindownload {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 20%;
+    /* ARTE & ANALOG PAGE */
+    /* GRID ANALOG PAGE */
   }
-  html body .maindownload .h2-container {
+  html .maindownload .h2-container {
     text-shadow: 0 0 1rem #000000;
     margin-bottom: 15rem;
     padding: 1%;
     margin-left: 1%;
     margin-right: 1%;
   }
-  html body .maindownload .h2-container h2 {
+  html .maindownload .h2-container h2 {
     margin-bottom: 10rem;
     font-size: 8rem;
-    font-weight: 900;
-    letter-spacing: 2rem;
+    font-weight: 700;
+    letter-spacing: 6rem;
     color: #fffefe;
     text-align: center;
   }
-  html body .maindownload .imgcont {
+  html .maindownload .image-complement {
+    margin-left: 22%;
+  }
+  html .maindownload .image-complement img {
+    width: 100rem;
+  }
+  html .maindownload .imgcont {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2156,10 +2166,10 @@
     margin-top: 10%;
     margin-left: 8rem;
   }
-  html body .maindownload .imgcont img {
+  html .maindownload .imgcont img {
     width: 60rem;
   }
-  html body .maindownload article {
+  html .maindownload article {
     box-shadow: 0 0 1rem #080e0b, inset 0 0 2rem #000000;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./prlx.jpg);
     background-repeat: no-repeat;
@@ -2168,17 +2178,17 @@
     margin-left: 1%;
     margin-right: 1%;
   }
-  html body .maindownload p {
+  html .maindownload p {
     word-spacing: 0.1rem;
     text-shadow: 0 0 2rem #000000;
     text-align: center;
     text-transform: uppercase;
     color: #d8d5d5;
-    font-size: 1.9rem;
+    font-size: 3rem;
     margin: 5%;
     padding: 2%;
   }
-  html body .maindownload .btndownload {
+  html .maindownload .btndownload {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2189,28 +2199,28 @@
     text-transform: uppercase;
     padding-right: 7%;
   }
-  html body .maindownload .btndownload a {
+  html .maindownload .btndownload a {
     text-decoration: none;
   }
-  html body .maindownload .btndownload .btndd {
+  html .maindownload .btndownload .btndd {
     text-align: center;
     font-size: 4rem;
     border: 0.2rem solid #F2F2F2;
     width: 40rem;
     background-color: #000000;
   }
-  html body .maindownload .btndownload .btndd:hover {
+  html .maindownload .btndownload .btndd:hover {
     transition: 0.3s;
     color: #038C4C;
   }
-  html body .maindownload .h3conteiner {
+  html .maindownload .h3conteiner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 10rem;
   }
-  html body .maindownload .h3conteiner h3 {
+  html .maindownload .h3conteiner h3 {
     color: rgb(0, 0, 0);
     padding-left: 7%;
     letter-spacing: 2rem;
@@ -2220,32 +2230,32 @@
     text-transform: uppercase;
     text-shadow: 0 0 1rem #F2F2F2;
   }
-  html body .header-arte {
+  html .maindownload .header-arte {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 4rem;
   }
-  html body .header-arte nav ul li {
+  html .maindownload .header-arte nav ul li {
     margin-top: 1rem;
   }
-  html body .header-arte a {
+  html .maindownload .header-arte a {
     margin-top: 3%;
     align-items: center;
   }
-  html body .mainarte .im-container {
+  html .maindownload .mainarte .im-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  html body .mainarte .im-container img {
+  html .maindownload .mainarte .im-container img {
     margin: 4%;
     box-shadow: 0 0 2rem #000000, inset 0 0 2rem #000000;
     width: 110rem;
   }
-  html body .mainarte .article-container {
+  html .maindownload .mainarte .article-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2253,14 +2263,14 @@
     margin: 4%;
     background-color: #000000;
   }
-  html body .mainarte .article-container p {
+  html .maindownload .mainarte .article-container p {
     text-transform: uppercase;
     text-align: center;
     font-size: 2rem;
     margin: 5%;
     color: #F2F2F2;
   }
-  html body .mainanalog .im-container {
+  html .maindownload .mainanalog .im-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2268,14 +2278,14 @@
     height: 48rem;
     width: 50rem;
   }
-  html body .mainanalog .im-container img {
+  html .maindownload .mainanalog .im-container img {
     margin-top: 2%;
     margin-right: 10rem;
     box-shadow: 0 0 2rem #000000, inset 0 0 2rem #000000;
     width: 55rem;
     height: 55rem;
   }
-  html body .grid-article-container {
+  html .maindownload .grid-article-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2292,10 +2302,10 @@
     color: aliceblue;
     text-shadow: 0 0 2rem #000000;
   }
-  html body .grid-article-container p {
+  html .maindownload .grid-article-container p {
     margin: 5%;
   }
-  html body .grid-aside-analog {
+  html .maindownload .grid-aside-analog {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2308,42 +2318,42 @@
     border: #F2F2F2;
     box-shadow: 0 0 0.3rem #F2F2F2;
   }
-  html body .grid-aside-analog h2 {
+  html .maindownload .grid-aside-analog h2 {
     margin: 10%;
     font-size: 5rem;
     text-align: center;
     text-transform: uppercase;
     color: #572E8B;
   }
-  html body .grid-aside-analog img {
+  html .maindownload .grid-aside-analog img {
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 5%;
     margin: 2%;
     width: 55rem;
   }
-  html body .grid-aside-analog nav {
+  html .maindownload .grid-aside-analog nav {
     border: none;
     background-color: #000000;
     display: flex;
     justify-content: center;
     margin-left: 17rem;
   }
-  html body .grid-aside-analog nav a {
+  html .maindownload .grid-aside-analog nav a {
     text-align: center;
     text-decoration: none;
     background-color: #5a07c7;
     width: 21rem;
     margin-bottom: 5rem;
   }
-  html body .grid-aside-analog nav a .btnco {
+  html .maindownload .grid-aside-analog nav a .btnco {
     font-size: 2rem;
     text-align: center;
   }
-  html body .section-not-visible-desktop {
+  html .maindownload .section-not-visible-desktop {
     display: none;
   }
-  html body .grid-section {
+  html .maindownload .grid-section {
     text-align: center;
     margin-left: 3%;
     font-size: 8rem;
@@ -2353,12 +2363,12 @@
     height: 53rem;
     width: 80%;
   }
-  html body .grid-section p {
+  html .maindownload .grid-section p {
     text-align: center;
     text-transform: uppercase;
     margin: 5%;
   }
-  html body .grid-sectione {
+  html .maindownload .grid-sectione {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2376,21 +2386,21 @@
     width: 70rem;
     height: 70rem;
   }
-  html body .grid-sectione p {
+  html .maindownload .grid-sectione p {
     margin: 10%;
     font-size: 6rem;
     text-align: center;
     text-transform: uppercase;
   }
-  html body .grid-sectione p:hover {
+  html .maindownload .grid-sectione p:hover {
     color: #572E8B;
     transition: 0.5s;
     text-shadow: 0 0 0 #572E8B;
   }
-  html body .grid-footer-analog {
+  html .maindownload .grid-footer-analog {
     margin-top: 5%;
   }
-  html body .grid-container-analog {
+  html .maindownload .grid-container-analog {
     display: grid;
     row-gap: 1rem;
     -moz-column-gap: 0.1rem;
@@ -2403,32 +2413,166 @@
     /* GRID AREAS */
     /* ADAPTACIONES */
   }
-  html body .grid-container-analog .grid-header-analog {
+  html .maindownload .grid-container-analog .grid-header-analog {
     grid-area: header;
   }
-  html body .grid-container-analog .mainanalog {
+  html .maindownload .grid-container-analog .mainanalog {
     grid-area: contenido;
   }
-  html body .grid-container-analog .grid-article-container {
+  html .maindownload .grid-container-analog .grid-article-container {
     grid-area: article;
   }
-  html body .grid-container-analog .grid-section {
+  html .maindownload .grid-container-analog .grid-section {
     grid-area: section;
   }
-  html body .grid-container-analog .grid-aside-analog {
+  html .maindownload .grid-container-analog .grid-aside-analog {
     grid-area: publicidad;
   }
-  html body .grid-container-analog .grid-sectione {
+  html .maindownload .grid-container-analog .grid-sectione {
     grid-area: sectione;
   }
-  html body .grid-container-analog .grid-footer-analog {
+  html .maindownload .grid-container-analog .grid-footer-analog {
     grid-area: foot;
   }
-  html body .grid-container-analog .grid-header-analog {
+  html .maindownload .grid-container-analog .grid-header-analog {
     height: 4rem;
     width: 100%;
   }
-  html body .grid-container-analog .grid-header-analog nav ul li {
+  html .maindownload .grid-container-analog .grid-header-analog nav ul li {
     margin-top: 1rem;
+  }
+  html .mainarte {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+  html .mainarte .im-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  html .mainarte .im-container img {
+    box-shadow: 0 0 2rem #000000, inset 0 0 2rem #000000;
+    width: 80rem;
+  }
+  html .mainarte .article-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    margin-top: 1rem;
+    margin-bottom: 30rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  html .mainarte .article-container article {
+    margin: 4%;
+  }
+  html .mainarte .article-container article p {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    color: #F2F2F2;
+  }
+  html .mainanalog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  html .mainanalog .im-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  html .mainanalog .im-container img {
+    box-shadow: 0 0 2rem #000000, inset 0 0 2rem #000000;
+    width: 80rem;
+    height: 80rem;
+    margin: 0.2rem;
+  }
+  html .grid-article-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    margin-top: 1rem;
+    margin-bottom: 30rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  html .grid-article-container p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin: 5%;
+    color: aliceblue;
+  }
+  html .grid-aside-analog {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0.4rem;
+    border: #f2f2f2;
+    background-color: #000000;
+    margin-bottom: 20rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  html .grid-aside-analog aside {
+    width: 100rem;
+  }
+  html .grid-aside-analog aside .section-not-visible-desktop {
+    display: flex;
+    justify-content: center;
+    text-shadow: 0 0 2rem #000000;
+    margin-bottom: 1rem;
+  }
+  html .grid-aside-analog aside .section-not-visible-desktop p {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 700;
+    color: #572E8B;
+  }
+  html .grid-aside-analog aside h2 {
+    margin: 10%;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #572E8B;
+    text-shadow: 0 0 2rem #000000;
+  }
+  html .grid-aside-analog aside img {
+    margin-left: 15rem;
+    border-radius: 2%;
+    width: 60rem;
+  }
+  html .grid-aside-analog aside nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 36rem;
+  }
+  html .grid-aside-analog aside a {
+    border: 0.2rem solid #f2f2f2;
+  }
+  html .grid-aside-analog aside a p {
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 3rem;
+    margin: 1rem;
+  }
+  html .grid-aside-analog .grid-section {
+    display: none;
+  }
+  html .grid-aside-analog .grid-sectione {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
